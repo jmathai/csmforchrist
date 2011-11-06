@@ -50,6 +50,7 @@
       <?php echo $footer; ?>
 	</div></div>
   <script type="text/javascript" src="/js/jquery-1.6.2.min.js"></script>
+  <script type="text/javascript" src="js/jquery.history.js"></script>
   <script type="text/javascript" src="/js/main.js"></script>
   <script>csm.init();</script>
 </body>
