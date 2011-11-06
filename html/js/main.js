@@ -4,7 +4,6 @@ var csm = (function(){
 
   get = function(url) {
     var urlJson = url+'.json';
-    console.log(url);
     $.get(urlJson, store, 'json');
   };
 
@@ -25,7 +24,6 @@ var csm = (function(){
       $('a').live('click', csm.load);
       History.Adapter.bind(window,'statechange',function(){
         var State = History.getState();
-        History.log(State.data, State.title, State.url);
         render(State.data);
       });
     },
