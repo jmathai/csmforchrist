@@ -21,7 +21,8 @@ var csm = (function(){
 
   return {
     init: function() {
-      $('a').live('click', csm.load);
+      $('a:not(.lightbox)').live('click', csm.load);
+      $('a.lightbox').lightBox();
       History.Adapter.bind(window,'statechange',function(){
         var State = History.getState();
         render(State.data);
@@ -30,6 +31,9 @@ var csm = (function(){
     load: function(ev) {
       var el = ev.target
           url = $(el).attr('href');
+
+      if(url.search('http') === 0)
+        return;
       
       if(History.enabled && url.search('http://') == -1) {
         ev.preventDefault();

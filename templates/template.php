@@ -12,6 +12,7 @@
 <meta name="Robots" content="index,follow" />		
 
 <link rel="shortcut icon" href="/images/favicon.ico">
+<link rel="stylesheet" href="/css/jquery.lightbox-0.5.css">
 <link rel="stylesheet" href="/css/main.css">
 
 <title>Christhia Seva Mission - Chikkaballapur, India.</title>
@@ -50,7 +51,8 @@
       <?php echo $footer; ?>
 	</div></div>
   <script type="text/javascript" src="/js/jquery-1.6.2.min.js"></script>
-  <script type="text/javascript" src="js/jquery.history.js"></script>
+  <script type="text/javascript" src="/js/jquery.history.js"></script>
+  <script type="text/javascript" src="/js/jquery.lightbox-0.5.min.js"></script>
   <script type="text/javascript" src="/js/main.js"></script>
   <script>csm.init();</script>
 </body>
