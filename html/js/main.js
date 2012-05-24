@@ -10,7 +10,7 @@ var csm = (function(){
   render = function(result) {
     $('body').removeClass().addClass(result.bodyClass);
     //$('#header').html(result.header);
-    $('#main').fadeOut('fast', function(){ $('#main').html(result.content); $('#main').fadeIn('fast'); });
+    $('#main').fadeOut('fast', function(){ $('#main').html(result.content); $('#main').fadeIn('fast'); $('a.lightbox').lightBox(); });
     //$('#footer').html(result.footer);
     //window.history.pushState(data, "", url);
   };
